@@ -29,7 +29,8 @@ $(() => {
     $("body").css({
       "background": "url('img/workout_room.png') no-repeat center center fixed",
       "background-size": "cover"
-      })
+    })
+    $('.quote').css('color', 'white')
     imgSliderToggle()
     $('#workout_room').css('background-color', 'rgb(70, 70, 70)')
   });
@@ -38,14 +39,17 @@ $(() => {
       "background" :"url('img/front_desk.png') no-repeat center center fixed",
       "background-size": "cover"
     })
+    $('.quote').css('color', 'white')
     imgSliderToggle()
     $('#front_desk').css('background-color', 'rgb(70, 70, 70)')
   });
+
   $('#team').on("click", () => {
     $("body").css({
       "background":"url('img/team.jpg') no-repeat center center fixed",
       "background-size": "cover"
     })
+    $('.quote').css('color', 'black')
     imgSliderToggle()
     $('#team').css('background-color', 'rgb(70, 70, 70)')
   });

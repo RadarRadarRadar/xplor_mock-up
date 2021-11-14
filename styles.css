@@ -136,6 +136,8 @@ nav {
 
 .quote {
   font-size: 1em;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 @media (max-width: 991px) {
@@ -154,6 +156,7 @@ nav {
 
   .hero {
     padding-left: 0;
+    display: flex;
   }
 
   .hero__home > h1 {
