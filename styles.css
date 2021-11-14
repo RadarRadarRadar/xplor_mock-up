@@ -1,0 +1,166 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: url("img/workout_room.png") no-repeat center center fixed;
+  background-size: cover;
+  transition: background 0.5s;
+}
+
+
+hr {
+  margin: .25rem 0;
+}
+
+p {
+  font-size: 3vh;
+  font-weight: bold;
+  margin: 0;
+  padding: .1em .2em;
+}
+iframe {
+  width: 50%;
+  min-height: 50%;
+}
+nav {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.booking {
+  text-align: center;
+}
+
+.booking-btn, .login-btn {
+  padding: .5rem 2rem;
+  font-size: .9rem;
+}
+
+.bottom-content {
+  padding-top: auto;
+}
+
+.btn {
+  border-radius: 0px;
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn + .btn {
+  margin-left: 1rem;
+}
+
+.card {
+  background-color: rgba(32, 32, 32, 0.698);
+  padding: 1rem;
+}
+.container {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-fluid {
+  max-width: 85%;
+}
+
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.hero {
+  color: #fff;
+  height: 100%;
+  display: inline-flex;
+  padding-left: 3rem;
+  flex-direction: column;
+}
+
+.hero__home > h1 {
+  font-size: 6.5vh;
+}
+
+.hero__home > h1 {
+  font-size: 5vh;
+  font-weight: bold;
+  display: inline-block;
+  margin: 0;
+  padding: .1em .2em;
+  background-color: rgba(187, 187, 187, 0.25);
+}
+
+.vert-center {
+  margin: auto 0;
+}
+
+.center {
+  margin: auto;
+}
+
+.img-slider {
+  margin: 3em auto 1em auto;
+  text-align: center;
+}
+
+.nav-btn {
+  padding: .1rem 1rem;
+  font-size: .75rem;
+  font-weight: normal;
+  border-width: 1px;
+  border-color:rgba(187, 187, 187, 0.356);
+}
+
+.nav-item + .nav-item {
+  padding-left: 2.5rem;
+}
+
+.navbar-brand{
+  margin-right: 6rem;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+@media (max-width: 991px) {
+  .navbar-brand {
+    font-size: 2rem;
+    margin: 0 auto;
+    -webkit-transform: translateX(10px);
+    -moz-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    transform: translateX(28px);
+  }
+
+  .container-fluid {
+    max-width: 100%;
+  }
+
+  .hero {
+    padding-left: 0;
+  }
+
+  .hero__home > h1 {
+    background-color: rgba(32, 32, 32, 0.698);
+  }
+
+  .nav-item + .nav-item {
+    padding-left: 0;
+  }
+}
