@@ -9,7 +9,6 @@ body {
   transition: background 0.5s;
 }
 
-
 hr {
   margin: .25rem 0;
 }
@@ -20,10 +19,7 @@ p {
   margin: 0;
   padding: .1em .2em;
 }
-iframe {
-  width: 50%;
-  min-height: 50%;
-}
+
 nav {
   background-color: rgba(0, 0, 0, 0.5);
 }
