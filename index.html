@@ -10,6 +10,18 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="app.js"></script>
+
+    <script type="text/javascript">
+      let images = new Array();
+      function preloadImages() {
+        for (i=0; i < preloadImages.arguments.length; i++){
+          images[i] = new Image();
+          images[i].src = preloadImages.arguments[i];
+      }
+      }
+      preloadImages('img/workout_room.png', 'img/front_desk.png', 'img/team.jpg');
+    </script>
+
     <title>XPLOR</title>
   </head>
 
