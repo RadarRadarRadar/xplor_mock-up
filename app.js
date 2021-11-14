@@ -17,6 +17,7 @@ const imgSliderToggle = function() {
 }
 
 
+
 $(() => {
   // Start-up
   sectionToggle()

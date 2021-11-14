@@ -134,6 +134,10 @@ nav {
     box-shadow: none;
 }
 
+.quote {
+  font-size: .75rem;
+}
+
 @media (max-width: 991px) {
   .navbar-brand {
     font-size: 2rem;
