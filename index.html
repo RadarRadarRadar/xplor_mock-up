@@ -10,40 +10,63 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="app.js"></script>
-    <script type="text/javascript" src="imgPreloader.js"></script>
+    <script type="text/javascript" src="imgPreloader.js">
+      preloadImages(
+        'img/workout_room.png', 
+        'img/front_desk.png', 
+        'img/team.jpg'
+      )
+    </script>
+
+    <script type="text/javascript">
+      randomQuote = function () {
+        const quotes = [
+          "A little progress each day adds up to big results",
+          "Your success is found in your daily routine",
+          "Strive for progress, not perfection",
+          "Create healthy habits, not restrictions"
+        ]
+        const rand = Math.floor(Math.random()*quotes.length)
+        const quote = quotes[rand]
+        $(() => {
+          $('.quote').text(quote)
+        })
+      }
+    </script>
 
     <title>XPLOR</title>
   </head>
 
-  <body onload="preloadImages('img/workout_room.png', 'img/front_desk.png', 'img/team.jpg')">
+  <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">XPLOR</a>
+        <a class="navbar-brand" href="#" onclick="randomQuote()">XPLOR</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item about-nav-btn">
-              <a class="nav-link active" aria-current="about" href="#">ABOUT</a>
+              <a class="nav-link active" aria-current="about" href="#" onclick="randomQuote()">ABOUT</a>
             </li>
             <li class="nav-item team-nav-btn">
-              <a class="nav-link active" aria-current="team" href="#">TEAM</a>
+              <a class="nav-link active" aria-current="team" href="#" onclick="randomQuote()">TEAM</a>
             </li>
             <li class="nav-item book-nav-btn">
-              <a class="nav-link active" aria-current="book" href="#">BOOK</a>
+              <a class="nav-link active" aria-current="book" href="#" onclick="randomQuote()">BOOK</a>
             </li>
             <li class="nav-item buy-nav-btn">
-              <a class="nav-link active" aria-current="buy sessions" href="#">BUY SESSIONS</a>
+              <a class="nav-link active" aria-current="buy sessions" href="#" onclick="randomQuote()">BUY SESSIONS</a>
             </li>
           </ul>
-          <button class="btn btn-outline-light nav-btn contact-btn" type="submit">CONTACT</button>
-          <button class="btn btn-outline-light nav-btn login-btn" type="submit">REGISTER/LOGIN</button>
+          <button class="btn btn-outline-light nav-btn contact-btn" type="submit" onclick="randomQuote()">CONTACT</button>
+          <button class="btn btn-outline-light nav-btn login-btn" type="submit" onclick="randomQuote()">REGISTER/LOGIN</button>
         </div>
       </div>
     </nav>
     <div class="container">
       <div class="hero">
+        <h6 class="quote mx-auto p-1"></h6>
         <div class="hero__home vert-center">
           <h1>THIS IS</h1>
           <br>

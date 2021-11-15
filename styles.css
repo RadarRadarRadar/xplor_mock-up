@@ -134,6 +134,12 @@ nav {
     box-shadow: none;
 }
 
+.quote {
+  font-size: 1em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 @media (max-width: 991px) {
   .navbar-brand {
     font-size: 2rem;
@@ -150,6 +156,7 @@ nav {
 
   .hero {
     padding-left: 0;
+    display: flex;
   }
 
   .hero__home > h1 {
