@@ -7,5 +7,5 @@ Mock-up assignment for XPLOR.
 - Image slider changes background image.
 - Nav links change hero text with jQuery.
 - Random motivational quote displays as nav links are clicked.
-- Image preloader function to avoid image stutter.
+- Image preloader function.
 - Dummy Register/Login inputs.
