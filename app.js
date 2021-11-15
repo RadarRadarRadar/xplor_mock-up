@@ -23,7 +23,7 @@ $(() => {
   sectionToggle()
   $('.hero__home').show()
   $('#workout_room').css('background-color', 'rgb(70, 70, 70)')
-
+  $("body").css({visibility:'visible'})
   // Background Img Switching
   $('#workout_room').on("click", () => {
     $("body").css({
